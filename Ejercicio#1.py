@@ -11,5 +11,12 @@ class Node:
         self.no = Node | None  #sub arbol derecho
         self.diagnostico: str | None = diagnostico
 
+class DecisionTreeNode:
+    def __init__(self, data: str, left=None, right=None):
+        self.data = data
+        self.left = left
+        self.right = right
+
+
 
 
