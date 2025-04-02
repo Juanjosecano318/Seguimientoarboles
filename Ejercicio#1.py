@@ -63,6 +63,10 @@ class DecisionTree:
             print("Respuesta no valida")
             self.recorrer_arbol(node)
 
+    def verificar_caminos(self,node: Node) -> bool:
+
+
+
 # Crear el árbol y ejecutarlo
 if __name__ == "__main__":
     decision_tree = DecisionTree(arbol_diagnostico)
