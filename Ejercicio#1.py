@@ -23,6 +23,21 @@ class DecisionTreeNode:
                 """
         self.root: Node | None = root
 
+class DecisionTree:
+    def __init__(self, data):
+        """Construye el árbol de decisiones a partir de un diccionario JSON."""
+        self.root = self.build_tree(data)
+
+    def build_tree(self, data):
+        """Función recursiva para construir el árbol."""
+        if "diagnostico" in data:
+            return Node(diagnostico=data["diagnostico"])  # Nodo hoja con diagnóstico
+
+        node = Node(pregunta=data["pregunta"])  # Nodo con pregunta
+        node.left = self.build_tree(data["si"])  # Construir lado izquierdo (respuesta "sí")
+        node.right = self.build_tree(data["no"])  # Construir lado derecho (respuesta "no")
+        return node
+
     def recorrer_arbol(self, node: Node):
         """
                 Función recursiva para recorrer el árbol de decisiones y hacer preguntas al usuario hasta llegar a un diagnóstico.
@@ -30,7 +45,7 @@ class DecisionTreeNode:
                 :param node: Nodo actual del árbol. Si no se pasa, comenzamos desde la raíz.
                 """
         if node is None:
-            node = self.root
+            return
 
         # Si el nodo tiene un diagnóstico, mostramos el diagnóstico
         if node.is_leaf():
@@ -46,18 +61,14 @@ class DecisionTreeNode:
             self.recorrer_arbol(node.right)
         else:
             print("Respuesta no valida")
+            self.recorrer_arbol(node)
 
+# Crear el árbol y ejecutarlo
 if __name__ == "__main__":
-    # Cargar el árbol desde el archivo JSON
-    with open("arbol_diagnostico_medico.json", "r", encoding="utf-8") as archivo:
-        arbol_diagnostico = json.load(archivo)
-
-    # Crear el árbol de decisiones
-    root = Node(pregunta=arbol_diagnostico["pregunta"])
-    decision_tree = DecisionTreeNode(root=root)
-
-    # Ejecutar el recorrido del árbol
+    decision_tree = DecisionTree(arbol_diagnostico)
     decision_tree.recorrer_arbol(decision_tree.root)
+
+
 
 
 

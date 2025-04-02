@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29a036e8-714a-43b8-ae1e-2dc51c86d994" name="Changes" comment="cambios en clase nodo deifncion de parametros">
+    <list default="true" id="29a036e8-714a-43b8-ae1e-2dc51c86d994" name="Changes" comment="recorrido del arbol">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ejercicio#1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejercicio#1.py" afterDir="false" />
     </list>
@@ -97,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743561052383</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="recorrido del arbol">
+      <option name="closed" value="true" />
+      <created>1743563003170</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743563003170</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +114,7 @@
     <MESSAGE value="creacion clase de logica" />
     <MESSAGE value="Creamos el metodo recorrer el arbol" />
     <MESSAGE value="cambios en clase nodo deifncion de parametros" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambios en clase nodo deifncion de parametros" />
+    <MESSAGE value="recorrido del arbol" />
+    <option name="LAST_COMMIT_MESSAGE" value="recorrido del arbol" />
   </component>
 </project>
