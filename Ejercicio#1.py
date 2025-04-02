@@ -63,7 +63,28 @@ class DecisionTree:
             print("Respuesta no valida")
             self.recorrer_arbol(node)
 
-    def verificar_caminos(self,node: Node) -> bool:
+
+    def verificar_camino(self):
+        return self.__verificar_caminos(self.root)
+
+    def __verificar_caminos(self,node: Node) -> bool:
+        if node is None:
+            return True
+
+        if node.is_leaf():
+            print(f"El nodo con diagnostico, {node.diagnostico} es hoja")
+            return True
+
+        print(f"El nodo con pregunta, {node.pregunta} no es una hoja")
+        left_valid = self.__verificar_caminos(node.left)
+        right_valid = self.__verificar_caminos(node.right)
+
+        if left_valid and right_valid:
+            return True
+        else:
+            return False
+
+
 
 
 
