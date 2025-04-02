@@ -84,10 +84,6 @@ class DecisionTree:
         else:
             return False
 
-
-
-
-
 # Crear el árbol y ejecutarlo
 if __name__ == "__main__":
     decision_tree = DecisionTree(arbol_diagnostico)
