@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29a036e8-714a-43b8-ae1e-2dc51c86d994" name="Changes" comment="creacion clase de logica">
+    <list default="true" id="29a036e8-714a-43b8-ae1e-2dc51c86d994" name="Changes" comment="Creamos el metodo recorrer el arbol">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ejercicio#1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ejercicio#1.py" afterDir="false" />
     </list>
@@ -81,13 +81,22 @@
       <option name="project" value="LOCAL" />
       <updated>1743555386672</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creamos el metodo recorrer el arbol">
+      <option name="closed" value="true" />
+      <created>1743559625056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743559625056</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementacion de archivo json y lectura" />
     <MESSAGE value="creacion de clase Node" />
     <MESSAGE value="creacion clase de logica" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion clase de logica" />
+    <MESSAGE value="Creamos el metodo recorrer el arbol" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creamos el metodo recorrer el arbol" />
   </component>
 </project>
