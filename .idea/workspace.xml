@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29a036e8-714a-43b8-ae1e-2dc51c86d994" name="Changes" comment="Implementacion de recorrido verificar_camino" />
+    <list default="true" id="29a036e8-714a-43b8-ae1e-2dc51c86d994" name="Changes" comment="creacion de clase nodo #2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejercicio#2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicio#2.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -138,7 +141,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743623713722</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="implementacion terminada">
+      <option name="closed" value="true" />
+      <created>1743624959028</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743624959028</updated>
+    </task>
+    <task id="LOCAL-00011" summary="importacion .json segundo punto">
+      <option name="closed" value="true" />
+      <created>1743625137879</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743625137879</updated>
+    </task>
+    <task id="LOCAL-00012" summary="creacion de clase nodo #2">
+      <option name="closed" value="true" />
+      <created>1743625507376</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743625507376</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +178,9 @@
     <MESSAGE value="implemenetacion metodo build_treee y ejecucion de .json" />
     <MESSAGE value="implementacion clase para verificar caminos" />
     <MESSAGE value="Implementacion de recorrido verificar_camino" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementacion de recorrido verificar_camino" />
+    <MESSAGE value="implementacion terminada" />
+    <MESSAGE value="importacion .json segundo punto" />
+    <MESSAGE value="creacion de clase nodo #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion de clase nodo #2" />
   </component>
 </project>
