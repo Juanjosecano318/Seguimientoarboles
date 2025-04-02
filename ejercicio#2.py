@@ -12,22 +12,24 @@ class Node:
         self.right = None # Respuesta "no"
 
 class Adivinador:
-    def __init__(self, root=None, pregunta_inicial="¿Es un animal?"):
-        """Inicializa el árbol de adivinanzas con una pregunta base si no se proporciona un árbol."""
-        if root:
-            self.root = root
-        else:
-            self.root = Node(pregunta=pregunta_inicial)  # Nodo raíz con la pregunta inicial
+    def __init__(self, root=None, pregunta_inicial=None):
+        """Inicializa el árbol con una pregunta base si no se proporciona un árbol."""
+        if pregunta_inicial is None:
+            pregunta_inicial = "¿Es un ser vivo?"  # Pregunta base por defecto
 
-    def preorden(self,node):
-        """Recorre el árbol en preorden mostrando las preguntas."""
+        self.root = root if root else Node(pregunta=pregunta_inicial)
+    def mostrar_preguntas(self):
+        """Método público que inicia el recorrido preorden desde la raíz."""
+        self.__preorden(self.root)
+
+    def __preorden(self, node):
+        """Método privado para recorrer el árbol en preorden mostrando las preguntas."""
         if node is None:
-            nodo = self.root
+            return  # Caso base: No hacer nada si el nodo es nulo
 
-        if nodo.pregunta:
-            print(f"Pregunta: {nodo.pregunta}")
+        if node.pregunta:  # Si el nodo tiene una pregunta, la imprime
+            print(f"Pregunta: {node.pregunta}")
 
-        if nodo.left:
-            self.preorden(nodo.left)
-        if nodo.right:
-            self.preorden(nodo.right)
+        # Llamadas recursivas para recorrer el árbol
+        self.__preorden(node.left)
+        self.__preorden(node.right)
